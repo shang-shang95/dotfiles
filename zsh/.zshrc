@@ -9,6 +9,9 @@ fpath=(/path/to/homebrew/share/zsh-completions $fpath)
 autoload -U compinit
 compinit -u
 
+# pluginのロード
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # cd後にlsする
 function chpwd() {
   if [ `ls -Al | wc -l` -eq 0 ]; then
@@ -67,3 +70,8 @@ alias gpl='git pull'
 alias gps='git push'
 alias grbs='git rebase'
 alias gs='git status'
+alias ai='aicommits'
+
+# Key bindings, up/down arrow searches through history
+bindkey "\e[A" history-search-backward
+bindkey "\e[B" history-search-forward

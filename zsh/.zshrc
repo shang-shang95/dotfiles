@@ -71,3 +71,7 @@ alias gps='git push'
 alias grbs='git rebase'
 alias gs='git status'
 alias ac='aicommits'
+
+if [ -e ~/Program ]; then
+  cd ~/Program
+fi

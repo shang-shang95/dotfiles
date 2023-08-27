@@ -29,7 +29,7 @@ zstyle ':vcs_info:*' actionformats '(%s)-[%b|%a]'
 
 function precmd() {
     psvar=()
-    LANG=en_US.UTF-8 vcs_info
+    LANG=ja_JP.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }
 
@@ -70,8 +70,4 @@ alias gpl='git pull'
 alias gps='git push'
 alias grbs='git rebase'
 alias gs='git status'
-alias ai='aicommits'
-
-# Key bindings, up/down arrow searches through history
-bindkey "\e[A" history-search-backward
-bindkey "\e[B" history-search-forward
+alias ac='aicommits'

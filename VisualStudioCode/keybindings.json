@@ -243,9 +243,5 @@
   {
     "key": "ctrl+t",
     "command": "workbench.action.focusActiveEditorGroup"
-  },
-  {
-    "key": "ctrl+right",
-    "command": "workbench.action.quickSwitchWindow"
   }
 ]
